@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { KEY } from "../../const/API_KEY";
-import { Button, TextField } from "@mui/material";
+import { Button, Container, TextField } from "@mui/material";
 
 const HomePage = (): JSX.Element => {
   const [data, setData] = useState({});
@@ -29,7 +29,7 @@ const HomePage = (): JSX.Element => {
   };
 
   return (
-    <>
+    <Container>
       <h1>Только Майкоп-App</h1>
       <form onSubmit={handleGetForecast}>
         <TextField
@@ -54,7 +54,7 @@ const HomePage = (): JSX.Element => {
           Go!
         </Button>
       </form>
-    </>
+    </Container>
   );
 };
 
