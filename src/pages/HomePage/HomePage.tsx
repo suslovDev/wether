@@ -19,7 +19,8 @@ const HomePage = (): JSX.Element => {
     axios
       .get(
         "http://api.weatherapi.com/v1/forecast.json?key=" +
-          KEY +
+        "4f2aa6c0f2bf4bc186151423232205" +
+         // KEY +
           "&q=" +
           city +
           "&aqi=no"
